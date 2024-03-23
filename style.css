@@ -1,0 +1,149 @@
+/* sets the margin of all the element to 10px on all sides and the background-color to black */
+body{
+    margin: 10px;
+    background-color: black;
+}
+
+/* Home section which has the app name and nav bar. The styling is applied by id */
+
+#home {
+    /* margin: -1cm, -1cm, 0cm, -1cm; */
+    margin-top: -1cm;
+    margin-left: -1cm;
+    margin-right: -1cm;
+    padding-bottom: 2cm;
+    background-color:  #482c5a;
+    /* this needs to be here */
+    padding-top: 1cm;
+}
+
+/* Application name inside the home section. The styling is applied by tag name */
+
+header {
+    font-size: 30px;
+    color: rgb(187, 167, 204);
+    float: left;
+    padding-left: 2cm;
+    /* I needed to add top margin to make it more centered between top and bottom */
+    margin-top: 10px;
+}
+
+/* Navigation Bar Container*/
+
+.topdiv {
+    float: right;
+    padding-right: 1cm;
+}
+  
+/* Navigation Bar Buttons */
+.topmenu {
+    color: lightgray;
+    background-color:   #401d56;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration:none;
+    /* this is added later */
+    border-radius: 1mm;
+}
+  
+.topmenu:hover {
+    color: white;
+    font-weight: bolder;
+    background-color: purple;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+  
+/* Three conversion sections */
+#all-conversion-sections{
+    justify-content: center;
+    display: grid;
+}
+
+figure {
+    float:left; 
+    justify-self: auto; 
+    width:200px
+}
+
+img {
+    width: 200px;
+}
+
+figcaption {
+    color:black;
+    font-size: 17px;
+    text-align: center;
+}
+
+button{
+    font-size: 20px;
+    border: transparent;
+    border-radius: 40px;
+    width: fit-content;
+    background-color: rgb(204, 246, 204);
+    padding: 0px 15px 0px 15px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* The calculator panel */
+.b{
+    border-top-style: solid;
+    border-top-width: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 600px;
+    height: 400px;
+    /* The panel can have an overall left margin of 50px. */
+    /* margin left 50px makes it off center */
+    /* margin: 25px 0px 25px 50px ; */
+    margin: 25px 0px 25px 0px ;
+    display: flex;
+}
+
+.temperature{
+    border-top-color: green;
+}
+
+.weight{
+    border-top-color: coral;
+}
+
+.distance{
+    border-top-color: cyan;
+
+}
+
+legend {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+/* Floating icon for the home button */
+.iconbutton{
+    width:40px;
+    height:40px;
+    align-items: center;
+    border-radius: 100%;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom:40px;
+    left:0;
+    /* I added left margin to make it even with the footer on the left */
+    margin-left: 10px;
+}
+
+.iconbutton img {
+    width:30px
+}
+    
+footer {
+    background-color:rgb(245, 199, 243);
+    margin-top: 20px;
+}
